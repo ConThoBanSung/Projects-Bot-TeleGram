@@ -2,10 +2,10 @@ const fs = require('fs');
 const TelegramBot = require('node-telegram-bot-api');
 const http = require("http");
 // Thay [TOKEN-TELEGRAM-BOT] bằng token của bot Telegram của bạn
-  const bot = new TelegramBot('TOKEN', { polling: true });
+  const bot = new TelegramBot('7806956489:AAGJJgtGWBubkWtSAPtpFUYkJNNe6M2S9cI', { polling: true });
 const balanceDBPath = './money.json';
 let admin = '7368506325'
-let box = '1002339938423'
+let box = 'id box'
 let balanceDB = {};
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
@@ -162,7 +162,7 @@ bot.onText(/\/lalalalalalac/, async (msg) => {
     const balance = balanceDB[userId] || 0;
     await bot.sendMessage(msg.chat.id, `/code [dấu cách] GIFT CODE để nhận code bạn nhé
 ⭕️ VD: /code LMMabc123
-✅ Tham gia nhóm để nhận code hàng ngày bạn nhé https://t.me/+e3YOe2_yi6UzMjVl
+✅ Tham gia nhóm để nhận code hàng ngày bạn nhé https://web.telegram.org/a/#-1002339938423
 `);
 });
 // c
@@ -1218,7 +1218,7 @@ console.log(randomSevenDigitNumber);
   bot.sendMessage(msg.chat.id, `Vui lòng cược trên 1.000đ ❌`);
         return;
   }
-  
+
     const isTaiBet = (betTypeRaw === 'tai' || betTypeRaw === 'tài');
     let diceResults = []; 
 
@@ -1349,13 +1349,13 @@ console.log(randomSevenDigitNumber);
         winAmount = -betAmount;
         message += `┣ Thua Cuộc ❌`;
     }
-    
+
             break;
         case 'c':
         case 'chẵn':
         case 'l':
         case 'lẻ':
-        
+
 const diceResult97 = await bot.sendDice(msg.chat.id, {});
 
 const diceValue97 = diceResult97.dice.value;
