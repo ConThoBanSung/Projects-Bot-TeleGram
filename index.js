@@ -306,7 +306,7 @@ const referrerList = {};
 bot.onText(/\/link/, (msg) => {
   const chatId = msg.chat.id;
   const userId = msg.from.id;
-  const refLink = `https://www.facebook.com/thangducngo.edu?mibextid=LQQJ4d`; // link giới thiệu của bot
+  const refLink = `https://www.facebook.com/hoangkha.nguyenhuynh.73/`; // link giới thiệu của bot
 
   bot.sendMessage(chatId, `🌹 Giới thiệu để nhận 5% tiền khi người chơi nạp:\n${refLink}`);
 
@@ -527,11 +527,11 @@ bot.onText(/\/nap/, async (msg) => {
 
     const balance = balanceDB[userId] || 0;
     await bot.sendMessage(msg.chat.id, `
-➡️ BIDV: \`0922052002\`
-➡️ Tên người nhận: \`Ngo Duc Thang\`
+➡️ Mb Bank: \`0769532711\`
+➡️ Tên người nhận: \`Nguyen Huynh Hoang Kha\`
 ➡️ Nội dung: \`NAP ${userId}\`
-➡️ MoMo: \`0922052002\`
-➡️ Tên người nhận: \`Ngo Duc Thang\`
+➡️ MoMo: \`0769532711\`
+➡️ Tên người nhận: \`Nguyen Huynh Hoang Kha\`
 ➡️ Nội dung: \`NAP ${userId}\`
 Chú Ý : NẠP + ID 
 Nạp tối thiếu 50.000đ trở lên
