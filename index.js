@@ -2,7 +2,7 @@ const fs = require('fs');
 const TelegramBot = require('node-telegram-bot-api');
 const http = require("http");
 // Thay [TOKEN-TELEGRAM-BOT] bằng token của bot Telegram của bạn
-  const bot = new TelegramBot('7755911483:AAE-WB54GV3UCBBk33RM0fchtbsqz09GK0Y', { polling: true });
+  const bot = new TelegramBot('TOKEN', { polling: true });
 const balanceDBPath = './money.json';
 let admin = '7368506325'
 let box = '1002339938423'
